@@ -1,0 +1,31 @@
+{
+  "name": "realtime-match-chat",
+  "version": "1.0.0",
+  "description": "Realtime chat platform with JWT auth, random matching, friend requests, private messaging, and a React TypeScript UI.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "node -e \"require('./app'); console.log('backend loaded')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0",
+    "socket.io-encrypt": "^0.2.1",
+    "uuid": "^8.3.0",
+    "validator": "^13.1.1"
+  }
+}
