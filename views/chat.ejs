@@ -1,0 +1,29 @@
+<%- include('partials/header'); -%>
+<link rel="stylesheet" href="/public/style.css">
+<a href="/logout">logout</a>
+<button class="button button-primary" id="sendrequest" type="button">Add Friend</button>
+<div id="messages"></div>
+<form class="chat-controls" id="message_input_form">
+    <div class="chat-controls">
+
+        <button class=" butt button-primary " type="submit" id="new_user" style="
+    margin-bottom: 0px;
+" onClick="window.location.reload()">New
+            User</button>
+        <textarea class="u-full-width" type="text" id="message_input" name="content"
+            placeholder="Enter your message here" style="margin-bottom: 0px;"></textarea>
+        <button class="butt2 button-primary" type="submit">Send</button>
+
+    </div>
+
+</form>
+<script type="text/javascript">
+    var names = <%- JSON.stringify(clientusername.username); %>;
+    console.log(names);
+</script>
+<script src="/public/js/sock.js"></script>
+
+</body>
+
+
+</html>
