@@ -1,0 +1,25 @@
+<%- include('partials/header'); -%>
+<link rel="stylesheet" href="/public/style.css">
+<a href="/logout">logout</a>
+<div id="messages"></div>
+<form class="chat-controls" id="message_input_form">
+    <div class="chat-controls">
+
+
+        <textarea class="u-full-width" type="text" id="message_input" name="content"
+            placeholder="Enter your message here" style="margin-bottom: 0px;"></textarea>
+        <button class="butt2 button-primary" type="submit">Send</button>
+
+    </div>
+
+</form>
+<script type="text/javascript">
+ var names = <%- JSON.stringify(clientusername.username); %>;
+ console.log(names);    
+ var msges1 = <%- JSON.stringify(msges); %>;
+ console.log(msges1);
+</script>
+<script type="text/javascript" src="/public/js/private_message_client.js">
+</script>
+</body>
+</html>
