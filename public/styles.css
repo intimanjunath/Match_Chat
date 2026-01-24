@@ -1,0 +1,38 @@
+body {
+    width: 100%;
+    background-image: var(--body-bg);
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: min-content;
+    margin: auto;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+}
+
+.username_forum {
+    width: 71%;
+    margin: 0 auto;
+    min-width: 100px;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 50px;
+}
+.darkmode{
+    background-color: black;
+    color: white;
+  }
+
+  #github-link{
+      text-align:center;
+      margin-top:5pt;
+  }
+
+  #github-link span{
+    vertical-align: middle;
+    margin-left:1pt;
+  }
