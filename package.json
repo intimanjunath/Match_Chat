@@ -9,8 +9,8 @@
     "test": "node -e \"require('./app'); console.log('backend loaded')\""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Manjunath Ainti",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cookie-parser": "^1.4.5",
