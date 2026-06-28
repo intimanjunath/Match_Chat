@@ -105,3 +105,10 @@ realtime-match-chat/
 ## Notes
 
 Secrets are intentionally kept out of the repository. Use `.env.example` as the template for local configuration.
+
+## Maintenance Notes
+
+- Keep `.env` local and rotate `jwt_key` per environment.
+- Treat Socket.IO events as part of the API contract; update both the browser clients and server handlers together.
+- Store only conversation data needed for the chat experience, and avoid logging message bodies in production.
+- The React TypeScript dashboard is structured as a typed client surface over the existing Express and Socket.IO backend.
